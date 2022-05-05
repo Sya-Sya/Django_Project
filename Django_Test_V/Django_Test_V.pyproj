@@ -30,6 +30,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="HomeApp\admin.py" />
+    <Compile Include="HomeApp\apps.py" />
+    <Compile Include="HomeApp\migrations\__init__.py" />
+    <Compile Include="HomeApp\models.py" />
+    <Compile Include="HomeApp\tests.py" />
+    <Compile Include="HomeApp\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HomeApp\views.py" />
+    <Compile Include="HomeApp\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="Django_Test_V\__init__.py" />
     <Compile Include="Django_Test_V\settings.py" />
@@ -37,10 +47,15 @@
     <Compile Include="Django_Test_V\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HomeApp\templates\HomeApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Django_Test_V\" />
+    <Folder Include="HomeApp\" />
+    <Folder Include="HomeApp\migrations\" />
+    <Folder Include="HomeApp\templates\" />
+    <Folder Include="HomeApp\templates\HomeApp\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
