@@ -5,4 +5,4 @@ from django.shortcuts import render, redirect
 
 def LoginView(request):
     current = datetime.now()
-    return redirect("index.html")
+    return render(request,"index.html")

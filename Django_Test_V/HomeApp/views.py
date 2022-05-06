@@ -7,7 +7,3 @@ def LandingPage_View(request):
     current = datetime.now()
     return render(request,"index.html")
     #return redirect('index.html')
-
- 
-
-
