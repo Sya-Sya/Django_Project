@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'HomeApp'
+    'HomeApp',
+    'UserLogReg'
 ]
 
 # Middleware framework
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'Django_Test_V.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),os.path.join(BASE_DIR, 'HomeApp/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),os.path.join(BASE_DIR, 'HomeApp/templates'), os.path.join(BASE_DIR, 'UserLogReg/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

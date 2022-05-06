@@ -3,11 +3,6 @@ from datetime import datetime
 from django.shortcuts import render, redirect
  #Create your views here.
 
-def LandingPage_View(request):
+def LoginView(request):
     current = datetime.now()
-    return render(request,"index.html")
-    #return redirect('index.html')
-
- 
-
-
+    return redirect("index.html")
