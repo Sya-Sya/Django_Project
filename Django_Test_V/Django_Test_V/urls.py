@@ -25,5 +25,5 @@ urlpatterns = [
     #Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
     path('',include('HomeApp.urls')),
-    #path('^Home&/',HomeApp.views.Home,name=home)
+    path('',include('UserLogReg.urls'))
 ]
