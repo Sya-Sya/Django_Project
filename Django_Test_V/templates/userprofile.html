@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}{%block footer%}{%endblock footer%}
+{% if user.is_authenticated %}
+<div class="container" style="margin-top:25%;">
+    <form id="logoutForm" action="/logout" method="post" class="navbar-right">
+    {% csrf_token %}
+    <ul class="nav navbar-nav navbar-right">
+        <li><span class="navbar-brand">Hello {{ user.username }}!</span></li>
+        <li><a href="{% url 'logout'%}">Log off</a></li>
+    </ul>
+</form>
+</div>
+
+{% else %}
+
+<p>User not Valid</p>
+
+{% endif %}
+{%endblock%}
+

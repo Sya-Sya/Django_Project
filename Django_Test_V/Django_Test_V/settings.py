@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #New_Apps
     'HomeApp',
-    'UserLogReg'
+    'UserLogReg',
+    'UserProfile'
 ]
 
 # Middleware framework

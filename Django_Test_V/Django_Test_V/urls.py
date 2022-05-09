@@ -25,5 +25,6 @@ urlpatterns = [
     #Uncomment the next line to enable the admin:
     re_path('admin/', admin.site.urls),
     re_path('',include('HomeApp.urls')),
-    re_path('',include('UserLogReg.urls'))
+    re_path('',include('UserLogReg.urls')),
+    re_path('',include('UserProfile.urls'))
 ]
