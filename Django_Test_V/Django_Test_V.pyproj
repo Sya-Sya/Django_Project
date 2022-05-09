@@ -56,6 +56,16 @@
     </Compile>
     <Compile Include="UserLogReg\views.py" />
     <Compile Include="UserLogReg\__init__.py" />
+    <Compile Include="UserProfile\admin.py" />
+    <Compile Include="UserProfile\apps.py" />
+    <Compile Include="UserProfile\migrations\__init__.py" />
+    <Compile Include="UserProfile\models.py" />
+    <Compile Include="UserProfile\tests.py" />
+    <Compile Include="UserProfile\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserProfile\views.py" />
+    <Compile Include="UserProfile\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -68,6 +78,8 @@
     <Content Include="templates\HomePage.html" />
     <Content Include="templates\login.html" />
     <Content Include="templates\register.html" />
+    <Content Include="templates\userprofile.html" />
+    <Content Include="UserProfile\templates\UserProfile\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Django_Test_V\" />
@@ -85,6 +97,10 @@
     <Folder Include="UserLogReg\migrations\" />
     <Folder Include="UserLogReg\templates\" />
     <Folder Include="UserLogReg\templates\UserLogReg\" />
+    <Folder Include="UserProfile\" />
+    <Folder Include="UserProfile\migrations\" />
+    <Folder Include="UserProfile\templates\" />
+    <Folder Include="UserProfile\templates\UserProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

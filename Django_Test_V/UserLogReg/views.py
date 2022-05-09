@@ -2,15 +2,32 @@ from django.shortcuts import HttpResponse
 from datetime import datetime
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
+from django.contrib.auth import get_user_model
+from django.urls import *
  #Create your views here.
 
 def LoginView(request):
-    current = datetime.now()
-    return render(request,"login.html")
+    if request.method == 'POST':
+        username = request.POST['username'].strip()
+        password = request.POST['password'].strip()
+
+        user = auth.authenticate(username = username, password = password)
+        if user is not None:
+            auth.login(request, user)
+            if(request.GET.get('next', '') == ''):
+                print("user log in successfull")
+                return redirect("profile")
+                #return redirect(f'{userprofile}')
+            else:
+                return redirect(request.GET['next'])
+        else:
+            return HttpResponse("Credencial Invalid !!! ")
+    else:
+        return render(request,"login.html")
 
 def logout_View(request):
     auth.logout(request)
-    return redirect("HomePage")
+    return redirect("homepage")
 
 def RegisterView(request):
     print(request.POST)
