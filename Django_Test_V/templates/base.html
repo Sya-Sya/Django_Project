@@ -3,7 +3,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static '/css/style.css'%}" />
     <!-- -------------- Bootstrap 4 added -------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- font awesome cdn link  -->
@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href = "{%static '/css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href = "{%static '/css/login.css'%}">
+    <link rel="stylesheet" type="text/css" href = "{%static '/css/registrationstyle.css'%}">
 
     <title>complete responsive adventure & tour website design</title>
 </head>
+
 <body>
 
     <!-- header section starts  -->
 
 <header class="header">
 
-    <a href="#" class="logo"> <img class="Rattslogo" src="Ra.TTsLogo.png"></a>
+    <a href="#" class="logo"> <img class="Rattslogo" src="{%static '/images/Ra.TTs.jpg'%}"></a>
 
     <nav class="navbar">
         <div id="nav-close" class="fas fa-times"></div>
@@ -47,7 +50,7 @@
 
     {% endblock%}
 <!-- footer section starts  -->
-
+    {% block footer %}
 <section class="footer">
 
     <div class="box-container">
@@ -101,6 +104,6 @@
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+    {% endblock footer%}
 </body>
 </html>

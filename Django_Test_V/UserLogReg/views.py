@@ -6,3 +6,6 @@ from django.shortcuts import render, redirect
 def LoginView(request):
     current = datetime.now()
     return render(request,"login.html")
+
+def RegisterView(request):
+    return render(request,"register.html")

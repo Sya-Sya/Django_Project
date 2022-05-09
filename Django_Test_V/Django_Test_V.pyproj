@@ -58,13 +58,16 @@
     <Compile Include="UserLogReg\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HomeApp\templates\HomePage.html" />
     <Content Include="requirements.txt" />
-    <Content Include="static\css\index.css" />
+    <Content Include="static\css\registrationstyle.css" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\css\login.css" />
+    <Content Include="static\images\Ra.TTs.jpg" />
     <Content Include="static\js\common.js" />
     <Content Include="templates\base.html" />
     <Content Include="templates\HomePage.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\register.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Django_Test_V\" />
