@@ -2,9 +2,12 @@
 {% load static %}
 {% block content %}{% block footer %}{% endblock footer%}
 <div class="login-div">
+	    <link rel="stylesheet" type="text/css" href = "{%static '/css/registrationstyle.css'%}">
 			<img class="logo" src="Ra.TTs.jpg">
 			<div class="title">Welcome to Ra.TTs</div>
 			<div class="sub-title">Easy Registration!</div>
+			<form action="/register/" method="post">
+			{% csrf_token%}
 			<div class="field">
 				<div class="username">
 					<svg class="svg-icon" viewBox="0 0 20 20">
@@ -37,11 +40,12 @@
 					<input type="checkbox" name="" id="login-remember">
 					<label for="login-remember">I accept terms & conditions.</label>
 				</div>
-			</div>
-			<button class="signin-button">Log In</button>
+				<button class="signin-button">Log In</button>
 			<div class="links">
 			<a href="#">Already have a account?</a> or <a href="#">Log in</a>
 			</div>
+			</div>
+			</form>
 		
 		</div>
 {% endblock content%}
