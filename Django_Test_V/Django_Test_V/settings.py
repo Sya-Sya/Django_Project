@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     #New_Apps
     'HomeApp',
     'UserLogReg',
-    'UserProfile'
+    'UserProfile',
+    'Booking'
 ]
 
 # Middleware framework
