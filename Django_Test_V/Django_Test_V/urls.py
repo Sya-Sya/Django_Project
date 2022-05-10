@@ -26,5 +26,6 @@ urlpatterns = [
     re_path('admin/', admin.site.urls),
     re_path('',include('HomeApp.urls')),
     re_path('',include('UserLogReg.urls')),
-    re_path('',include('UserProfile.urls'))
+    re_path('',include('UserProfile.urls')),
+    re_path('',include('Booking.urls')),
 ]
