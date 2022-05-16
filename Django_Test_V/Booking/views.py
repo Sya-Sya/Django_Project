@@ -5,7 +5,5 @@ from django.shortcuts import HttpResponse
 # Create your views here.
 
 @login_required(login_url="/login/")
-def booking_View(request):
-    return render(request,"booking.html")
-
-
+def BookingPage_View(request):
+    return render(request,"booking2.0.html")
