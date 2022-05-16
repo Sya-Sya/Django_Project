@@ -31,6 +31,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Booking\admin.py" />
+    <Compile Include="Booking\apps.py" />
+    <Compile Include="Booking\migrations\__init__.py" />
+    <Compile Include="Booking\models.py" />
+    <Compile Include="Booking\tests.py" />
+    <Compile Include="Booking\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Booking\views.py" />
+    <Compile Include="Booking\__init__.py" />
     <Compile Include="HomeApp\admin.py" />
     <Compile Include="HomeApp\apps.py" />
     <Compile Include="HomeApp\migrations\__init__.py" />
@@ -68,6 +78,7 @@
     <Compile Include="UserProfile\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Booking\templates\Booking\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="static\css\registrationstyle.css" />
     <Content Include="static\css\style.css" />
@@ -75,6 +86,8 @@
     <Content Include="static\images\Ra.TTs.jpg" />
     <Content Include="static\js\common.js" />
     <Content Include="templates\base.html" />
+    <Content Include="templates\booking.html" />
+    <Content Include="templates\booking2.0.html" />
     <Content Include="templates\HomePage.html" />
     <Content Include="templates\login.html" />
     <Content Include="templates\register.html" />
@@ -82,6 +95,10 @@
     <Content Include="UserProfile\templates\UserProfile\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Booking\" />
+    <Folder Include="Booking\migrations\" />
+    <Folder Include="Booking\templates\" />
+    <Folder Include="Booking\templates\Booking\" />
     <Folder Include="Django_Test_V\" />
     <Folder Include="HomeApp\" />
     <Folder Include="HomeApp\migrations\" />
