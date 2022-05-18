@@ -86,11 +86,14 @@
     <Content Include="static\css\registrationstyle.css" />
     <Content Include="static\css\style.css" />
     <Content Include="static\css\login.css" />
+    <Content Include="static\css\userprofile.css" />
     <Content Include="static\images\Ra.TTs.jpg" />
     <Content Include="static\js\common.js" />
+    <Content Include="static\js\login.js" />
+    <Content Include="static\js\userprofile.js" />
     <Content Include="templates\base.html" />
-    <Content Include="templates\booking.html" />
     <Content Include="templates\booking2.0.html" />
+    <Content Include="templates\bookingnext.html" />
     <Content Include="templates\HomePage.html" />
     <Content Include="templates\login.html" />
     <Content Include="templates\register.html" />

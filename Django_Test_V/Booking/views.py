@@ -6,4 +6,5 @@ from django.shortcuts import HttpResponse
 
 @login_required(login_url="/login/")
 def BookingPage_View(request):
+    #form_class = AvailabilityForm
     return render(request,"booking2.0.html")
